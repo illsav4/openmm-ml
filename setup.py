@@ -42,6 +42,7 @@ setup(
     entry_points={
         'openmmml.potentials': [
             'aimnet2 = openmmml.models.aimnet2potential:AIMNet2PotentialImplFactory',
+            'aimnet2_2025 = openmmml.models.aimnet2potential:AIMNet2PotentialImplFactory',
             'ani1ccx = openmmml.models.anipotential:ANIPotentialImplFactory',
             'ani2x = openmmml.models.anipotential:ANIPotentialImplFactory',
             'ase = openmmml.models.asepotential:ASEPotentialImplFactory',

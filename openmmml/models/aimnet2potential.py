@@ -68,7 +68,7 @@ class AIMNet2PotentialImpl(MLPotentialImpl):
         except ImportError as e:
             raise ImportError(f"Failed to import aimnet with error: {e}. Install from https://github.com/isayevlab/aimnetcentral.")
         import torch
-        model = AIMNet2Calculator('aimnet2')
+        model = AIMNet2Calculator(self.name)
         device = torch.device(model.device)
         model.device = device
 
